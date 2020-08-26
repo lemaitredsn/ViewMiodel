@@ -1,0 +1,2 @@
+rootProject.name='MyThirdRecycleView'
+include ':app'

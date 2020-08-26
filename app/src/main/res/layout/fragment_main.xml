@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/containerMainFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/startCelebrityBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/startCelebrityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_celebrities_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/startHorizontalLinearLayout"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:id="@+id/startHorizontalLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horizont_btn"
+        app:layout_constraintTop_toTopOf="@id/startCelebrityBtn"
+        app:layout_constraintStart_toEndOf="@id/startCelebrityBtn"
+        app:layout_constraintEnd_toStartOf="@id/startGridLayoutManagerBtn"
+        />
+
+    <Button
+        android:id="@+id/startGridLayoutManagerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_gridlayoutmanager"
+        app:layout_constraintTop_toTopOf="@id/startCelebrityBtn"
+        app:layout_constraintStart_toEndOf="@id/startHorizontalLinearLayout"
+        app:layout_constraintEnd_toStartOf="@id/startStaggeredGridLayoutManagerBtn"
+        />
+
+    <Button
+        android:id="@+id/startStaggeredGridLayoutManagerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_staggeredgridlayoutmanager"
+        app:layout_constraintTop_toTopOf="@id/startCelebrityBtn"
+        app:layout_constraintStart_toEndOf="@id/startGridLayoutManagerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

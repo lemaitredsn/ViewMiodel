@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyThirdRecycleView</string>
+    <string name="start_celebrities_fragment">Celebrity</string>
+    <string name="horizont_btn">horizont</string>
+    <string name="start_gridlayoutmanager">Grid</string>
+    <string name="start_staggeredgridlayoutmanager">Staggered</string>
+    <string name="detail_info">Детальная информация по пользователю с идентификатором</string>
+</resources>
